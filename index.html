@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ice Cream</title>
+<!-- Link CSS file for styling -->
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<!-- Container for ice cream order form -->
+<div class="container">
+    <!-- Heading for form -->
+    <h2>Ice Cream Order Form</h2>
+    <!-- Ice cream order form -->
+    <form id="orderForm">
+         <!-- Input field for the number of scoops -->
+        <label for="scoops">Number of Scoops:</label>
+        <input type="number" id="scoops" name="scoops" min="1" value="1"><br><br>
+<!-- Group of checkboxes for toppings -->
+        <div class="topping-group">
+            <label id="toplabel">Toppings:</label><br>
+            <!-- Checkbox for Sprinkles -->
+            <input type="checkbox" id="sprinkles" name="topping" value="0.5">
+            <label for="sprinkles">Sprinkles ($0.50)</label><br>
+            <!-- Checkbox for Hot Fudge -->
+            <input type="checkbox" id="hotfudge" name="topping" value="1.25">
+            <label for="hotfudge">Hot Fudge ($1.25)</label><br>
+            <!-- Checkbox for Whipped Cream -->
+            <input type="checkbox" id="whippedcream" name="topping" value="0.25">
+            <label for="whippedcream">Whipped Cream ($0.25)</label><br>
+            <!-- Checkbox for Cherry -->
+            <input type="checkbox" id="cherry" name="topping" value="0.25">
+            <label for="cherry">Cherry ($0.25)</label><br>
+            <!-- Checkbox for Nuts -->
+            <input type="checkbox" id="nuts" name="topping" value="0.25">
+            <label for="nuts">Nuts ($0.25)</label><br>
+        </div>
+<!-- Submit button -->
+        <button type="button" onclick="calculateOrder()">Submit Order</button>
+    </form>
+<!-- Display order summary -->
+    <div id="orderSummary"></div>
+</div>
+
+<script src="/JS/app.js"></script>
+</body>
+</html>
