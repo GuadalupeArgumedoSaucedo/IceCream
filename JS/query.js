@@ -12,7 +12,7 @@ function selectedApizza()
         alert("Why did you choose peperroni?!");
     }
     else if(selectedOption == "3") {
-        alert("Why did you choose steak?");
+        alert("Why did you choose steak?!");
     }
     else {
         alert("Unknown pizza option selected");
